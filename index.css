@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@400;600&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #1C1C1C;
+    text-align: center;
+    font-family: 'Akshar', sans-serif;
+    font-style: normal;
+}
+
+.container{
+    background: #1F2937;
+    color: white;
+    width: 550px;
+    height: 719px;
+    margin: 40 auto;
+    border-radius: 30px;
+}
+
+.title{
+    background: #3A69D2;
+    padding: 40px 90px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.title h1 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+}
+
+.title p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: -20px;
+    color: rgb(223, 223, 223);
+}
+
+.service-btn button{
+    background: #D1D4F4;
+    border-radius: 7px;
+    border: none;
+    width: 143.17px;
+    height: 45px;
+    margin: 30px 10px;
+    font-family: 'Akshar', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #4A4E74;
+    box-shadow: 0 5px rgb(136, 146, 160);
+}
+
+.service-btn button:hover{
+    background-color: #c8cbf4;
+}
+
+.service-btn button:active {
+    background-color: #bcc0f9;
+    box-shadow: 0 5px rgb(74, 73, 73);
+    transform: translateY(3px);
+  }
+  
+.service-des1{
+    display: flex;
+    padding-left: 38px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #D5D4D8;
+    line-height: 20px;
+}
+  
+#total{
+    padding-left: 420px;
+} 
+
+hr{
+    width: 471px;
+    margin-top: 46px;
+    border: 1px solid #C3C6DB;
+}
+
+.service-des2{
+    display: flex;
+    padding-left: 38px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #D5D4D8;
+    line-height: 20px;
+}
+  
+#tol-amount{
+    padding-left: 375px;
+} 
+
+h3 {
+    margin-left: 440px;
+    margin-top: -1px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.send-btn button{
+    background: #3A69D2;
+    box-shadow: 0 5px rgb(69, 117, 188);
+    border-radius: 7px;
+    border: none;
+    padding: 9px 17px 9px 15px;
+    width: 473px;
+    height: 44px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    margin-top: 80px;
+}
+
+.send-btn button:hover{
+    background-color: #1253dd;
+}
+
+.send-btn button:active{
+    background-color: #1253dd;
+    box-shadow: 0 5px rgb(86, 107, 182);
+    transform: translateY(3px);
+}
