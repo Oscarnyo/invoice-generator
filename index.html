@@ -9,13 +9,26 @@
                 <p>Thanks for choosing GoodCorp, LLC!</p>
             </div>
             <div class="service-btn">
-                <button>Wash Car: $10</button>
-                <button>Mow Lawn: $20</button>
-                <button>Pull Weeds: $30</button>
+                <button id="wash-btn">Wash Car: $10</button>
+                <button id="mow-btn">Mow Lawn: $20</button#>
+                <button id="pull-btn">Pull Weeds: $30</button>
             </div>
             <div class="service-des1">
                 <p>TASK</p>
                 <p id="total">TOTAL</p>
+            </div>
+            <div class="item">
+                <ul id="additem">
+                    <!--
+                    <li>Wash Car<button>remove</button></li>
+                    <li>Mow Lawn<button>remove</button></li>
+                    <li>Pull Weeds<button>remove</button></li>-->
+                </ul>
+                <ul id="addprice">
+                    <!--<li>$10</li>
+                    <li>$10</li>
+                    <li>$10</li>-->
+                </ul>
             </div>
             <hr>
             <div class="service-des2">
@@ -23,10 +36,10 @@
                 <p id="tol-amount">TOTAL AMOUNT</p>
             </div>
             
-            <h3>$0</h3>
+            <h3 id="total-amt">$0</h3>
             
             <div class="send-btn">
-                <button>Send invoice</button>
+                <button id="reset-btn"><img src="mail.png">Send invoice</button>
             </div>
         </div>
         <script src="index.js"></script>
