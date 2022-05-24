@@ -16,41 +16,41 @@ let totalAmount = 0
   element.parentElement.remove()
   
   if (element.id === 'remove1') {
-            washEl.disabled = false
+            washbtn.disabled = false
             subtract(10)
     } else if (element.id === 'remove2') {
-            mowEl.disabled = false
+            mowbtn.disabled = false
             subtract(20)
     } else {
-            weedsEl.disabled = false
+            pullbtn.disabled = false
             subtract(30)
     }
     
     if (!items.length) {
-        PaymentOptionsEl.style.visibility = 'hidden' } 
+        payment.style.visibility = 'hidden' } 
   
 }
 
 
 function washAdd() {    
-    add(10, washEl, 'Wash Car', 1, '$10')
+    add(10, washbtn, 'Wash Car', 1, '$10')
 }
 
 function mowAdd() {   
-    add(20, mowEl, 'Mow Lawn', 2, '$20')
+    add(20, mowbtn, 'Mow Lawn', 2, '$20')
 }
 
 function weedsAdd() {
-    add(30, weedsEl, 'Pull Weeds', 3, '$30')
+    add(30, pullbtn, 'Pull Weeds', 3, '$30')
 }
 
 function add(n, el, type, seq, price) {  
-    items.push(`<div>${type} <button class="remove-buttons" id="remove${seq}" onclick="remove(event)"> remove </button>  <span class="totals">${price}</span> </div> `) 
+    items.push(`${type} <button class="remove-buttons" id="remove${seq}" onclick="remove(event)"> remove </button> <span>${price}</span> `) 
     
     addItems(items)    
-    PaymentOptionsEl.style.visibility = 'visible'  
+    payment.style.visibility = 'visible'  
     totalAmount += n
-    totalEl.textContent = `$ ${totalAmount}`         
+    tolAmount.textContent = `$${totalAmount}`         
     el.disabled = true    
 }
 
@@ -60,23 +60,23 @@ function addItems(arr) {
         invoiceItemTotal.textContent = ""
         for (let i = 0; i < arr.length; i++) {                                          
             invoiceItem.innerHTML = arr[i]
-            lineAddEl.append(invoiceItem)              
+            addprice.append(invoiceItem)              
     }
 }
 
 function subtract(n) {
     totalAmount -= n
-    totalEl.textContent = `$ ${totalAmount}`
+    tolAmount.textContent = `$${totalAmount}`
 }
 
 function sendInvoice() {
     totalAmount = 0
     //disable the button so that it can't be clicked again.
-    washEl.disabled = false
-    mowEl.disabled = false
-    weedsEl.disabled = false
-    totalEl.textContent = `$ ${totalAmount}`   
-    PaymentOptionsEl.style.visibility = 'hidden'
+    washbtn.disabled = false
+    mowbtn.disabled = false
+    pullbtn.disabled = false
+    tolAmount.textContent = `$${totalAmount}`   
+    payment.style.visibility = 'hidden'
     //check if the element exists on the page and then remove it
     for (i=1; i<4; i++){
         if (document.contains(document.getElementById(`remove${i}`))) {

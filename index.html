@@ -9,33 +9,35 @@
                 <p>Thanks for choosing GoodCorp, LLC!</p>
             </div>
             <div class="service-btn">
-                <button id="wash-btn">Wash Car: $10</button>
-                <button id="mow-btn">Mow Lawn: $20</button#>
-                <button id="pull-btn">Pull Weeds: $30</button>
+                <button id="wash-btn" onclick="washAdd()"ondblclick="disabled="false" washSubtract()"">Wash Car: $10</button>
+                <button id="mow-btn" onclick="mowAdd()">Mow Lawn: $20</button#>
+                <button id="pull-btn" onclick="weedsAdd()">Pull Weeds: $30</button>
             </div>
-            <div class="service-des1">
-                <p>TASK</p>
-                <p id="total">TOTAL</p>
-            </div>
-            <div class="item">
-                <ul id="additem">
-                    <li></li>
-                </ul>
-                <ul id="addprice">
-                    <li></li>
-                </ul>
+            <div class="tasktotal">
+                <div class="task">
+                    <p>TASK</p>
+                    <ul id="additem"></ul>
+                </div>
+                <div class="total">
+                    <p>TOTAL</p>
+                </div>
+                <ul id="addprice"></ul>
             </div>
             <hr>
-            <div class="service-des2">
-                <p>NOTES</p>
-                <p id="tol-amount">TOTAL AMOUNT</p>
-            </div>
+            <div class="tasktotal">
+                <div class="task">
+                    <p>NOTES</p>
+                    <p id="payment-options">We accept cash, credit card, or PayPal</p>
+                </div>
+                <div class="totalAmount">
+                    <p id="tol-amount">TOTAL AMOUNT</p>
+                </div>
+            </div>    
             <div class="service-des3">
-                <p id="payment-options">We accept cash, credit card, or PayPal</p>
-                <p id="total-amt">$0</p>
+                <p id="total-amt"></p>
             </div>
             <div class="send-btn">
-                <button id="reset-btn"><img src="mail.png">Send invoice</button>
+                <button id="reset-btn" onclick="sendInvoice()"><img src="mail.png">Send invoice</button>
             </div>
         </div>
         <script src="index.js"></script>
