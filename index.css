@@ -104,7 +104,7 @@ html, body {
 }
 
 #addprice{
-    margin-left: 270px ;
+    margin-left: 275px ;
 }
 
   
@@ -117,6 +117,7 @@ html, body {
 hr{
     width: 471px;
     border: 0.5px solid #C3C6DB;
+    margin-top: -10px;
 }
 
 .service-des2{
@@ -127,16 +128,24 @@ hr{
     color: #D5D4D8;
     line-height: 20px;
 }
-  
+
 #tol-amount{
     padding-left: 375px;
 } 
 
-h3 {
-    margin-left: 440px;
-    margin-top: -1px;
+.service-des3{
+    display: flex;
+}
+
+#payment-options{
+    margin-left: 38px;
+}
+
+#total-amt{
+    margin-left: 200px;
+    margin-top: 6.5;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 36px;
     line-height: 32px;
 }
 
