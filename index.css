@@ -14,13 +14,13 @@ html, body {
     color: white;
     max-width: 550px;
     height: auto;
-    margin: 40 auto;
+    margin: 30 auto;
     border-radius: 30px;
 }
 
 .title{
     background: #3A69D2;
-    padding: 40px 90px;
+    padding: 30px 90px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -38,6 +38,33 @@ html, body {
     line-height: 28px;
     margin-top: -20px;
     color: rgb(223, 223, 223);
+}
+
+.tasktotal {
+    display: flex;  
+    flex-direction: column;
+}
+
+.task {
+     text-align: left;
+     margin-right: auto;
+     color: white;
+     padding-left: 40px;
+}
+
+.totalAmount {
+    padding-right: 40px;
+    margin-top: -85px;
+    color: white;
+    text-align: right;
+}
+
+.total {
+    display: flex;
+    margin-left: auto;
+    margin-right: 40px;
+    margin-top: -50px;
+    color: white;
 }
 
 .service-btn button{
@@ -65,18 +92,11 @@ html, body {
     transform: translateY(3px);
   }
   
-.service-des1{
-    display: flex;
-    padding-left: 38px;
-    font-weight: 400;
-    font-size: 12px;
-    color: #D5D4D8;
-    line-height: 20px;
-}
+
 
 .remove-buttons {
-    margin-left: 20px;
-    margin-right: 300px;
+    margin-left: 15px;
+    margin-right: 290px;
     background: #D1D4F4;
     border-radius: 4px;
     border: none;
@@ -95,63 +115,31 @@ html, body {
     transform: translateY(2px);
 }
 
-
 li{
     list-style: none;
     text-align: left;
     padding-bottom: 20px;
+    font-size: 18px;
 }
-
-#addprice{
-    display: flex;
-    flex-direction: column;
-    margin-left: 0px ;
-}
-
-  
-#total{
-    padding-left: 420px;
-} 
-
-
 
 hr{
     width: 471px;
     border: 0.5px solid #C3C6DB;
-    margin-top: 30px;
-}
-
-.service-des2{
-    display: flex;
-    padding-left: 38px;
-    font-weight: 400;
-    font-size: 12px;
-    color: #D5D4D8;
-    line-height: 20px;
-}
-
-#tol-amount{
-    padding-left: 375px;
-} 
-
-.service-des3{
-    display: flex;
+    margin-top: 10px;
 }
 
 #payment-options{
-    margin-left: 38px;
+    
     visibility: hidden;
 }
 
-#total-amt{
-    margin-left: 180px;
-    margin-top: 6.5;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 32px;
+.amount {
+    text-align: right;
+    padding-right: 45px;
+    margin-top: -40px;
+    color: white;
+    font-size: 40px;
 }
-
-
 
 .send-btn button{
     background: #2656be;
@@ -165,7 +153,6 @@ hr{
     font-size: 14px;
     line-height: 24px;
     color: white;
-    margin-top: 30px;
     margin-bottom: 35px;
 }
 
